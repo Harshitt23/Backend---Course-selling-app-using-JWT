@@ -63,7 +63,7 @@ router.post('/courses', adminMiddleware, async (req, res) => {
     })
 
     res.json({
-        message: 'Course created successfully', courseId: newCourse._id
+        message: 'Course created successfully without any username and password in headers , just by using authentication in header as bearer : something ', courseId: newCourse._id
     })
 });
 
